@@ -7,15 +7,18 @@
 class Zipping:
     def example(self):
         tech_ceos = ["Elon Musk", "Jeff Bezos",
-                     "Bill Gates", "Mark Zuckerberg", "Tim Cook"]
+                     "Satya Nadella", "Mark Zuckerberg", "Tim Cook"]
         tech_companies = ["Tesla", "Amazon", "Microsoft", "Facebook", "Apple"]
-        net_worths = [185, 186, 134, 101, 1]
+        net_worths = [185, 186, 2, 101, 1]
         zipped = list(zip(tech_ceos, tech_companies, net_worths))
+
+        for ceo in zipped:
+            print(f"{ceo[0]} is the CEO of {ceo[1]} and is worth ${ceo[2]} billion")
         return zipped
 
     def example2(self):
         tech_ceos = ["Elon Musk", "Jeff Bezos",
-                     "Bill Gates", "Mark Zuckerberg", "Tim Cook"]
+                     "Satya Nadella", "Mark Zuckerberg", "Tim Cook"]
         tech_companies = ["Tesla", "Amazon", "Microsoft", "Facebook", "Apple"]
         net_worths = [185, 186, 134, 101, 1]
         zipped = list(zip(tech_ceos, tech_companies, net_worths))
@@ -24,7 +27,7 @@ class Zipping:
 
     def example3(self):
         tech_ceos = ["Elon Musk", "Jeff Bezos",
-                     "Bill Gates", "Mark Zuckerberg", "Tim Cook"]
+                     "Satya Nadella", "Mark Zuckerberg", "Tim Cook"]
         tech_companies = ["Tesla", "Amazon", "Microsoft", "Facebook", "Apple"]
         net_worths = [185, 186, 134, 101, 1]
         zipped = list(zip(tech_ceos, tech_companies, net_worths))
