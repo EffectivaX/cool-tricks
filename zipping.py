@@ -26,10 +26,10 @@ class Zipping:
         return unzipped
 
     def example3(self):
-        tech_ceos = ["Elon Musk", "Jeff Bezos",
+        tech_ceos = ["Elon Musk", "Sundar Pichai",
                      "Satya Nadella", "Mark Zuckerberg", "Tim Cook"]
-        tech_companies = ["Tesla", "Amazon", "Microsoft", "Facebook", "Apple"]
-        net_worths = [185, 186, 134, 101, 1]
+        tech_companies = ["Tesla", "Google", "Microsoft", "Facebook", "Apple"]
+        net_worths = [185, 5, 134, 101, 1]
         zipped = list(zip(tech_ceos, tech_companies, net_worths))
         unzipped = list(zip(*zipped))
         names, companies, worths = unzipped
